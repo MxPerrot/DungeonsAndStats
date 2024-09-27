@@ -19,9 +19,11 @@ from biplot import biplot
 
 # IMPORT DATA
 
-CSV_FILE = "data/csv/dnd_chars_unique.csv"
+#CSV_FILE = "data/csv/dnd_chars_unique.csv"
+CSV_FILE = "data/tsv/dnd_chars_unique.tsv"
 
-data = pd.read_csv(CSV_FILE)
+#data = pd.read_csv(CSV_FILE)
+data = pd.read_csv(CSV_FILE, sep='\t')
 
 # CLEAN UP DATA
 
